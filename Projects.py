@@ -113,3 +113,7 @@ else:
       print("You Lose")
     else:
      print("Default")
+
+if(computer == "s" and you == "w"):
+  print("You Win!!")
+
