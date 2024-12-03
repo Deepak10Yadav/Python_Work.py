@@ -503,4 +503,74 @@
 
 # print(patter(n))
 
+#------------------------------------->>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------------------------------
+# file Input/ Output (File I/O)
+
+# Ram Me Data Permanent Store Nahi Hota.
+
+# There Are Two  Types Of File : 
+# Text File And Binary File 
+
+# f = open("Projects.py") #----- It is Used To Open The File. 
+# data = f.read() #------ Here we write what we want to perform on the file like we want to read it ,edit it ,view it,etc
+# print(data) #------ Here We Print The Data
+# f.close() #----- Now evrything is done so we now close th e file that we had opend in line no. 514 or(f = open ("Projects.py"))
+
+# str = "This Is A Game Code.." # here we had created a string and filled it with some information that we want to paste on the file(new or old) 
+
+# f = open("Projects2.py" , "w") # here "w" reprents the mode in which we had open the file  like "w" = write mode, "r" = read mode etc...
+
+# f.write(str) # in bracket we had passed the argument str that we had created.
+
+# f.close
+
+# f = open("Projects.py","rb")
+
+# lines = f.readline()
+# print(lines)
+# print(lines,type(lines))
+
+# f.close()
+# str = "Hey How Are You"
+# f = open("Heyyyy.txt","a")
+
+# f.write(str)
+
+# f.close
+
+# With Statements---------------------------->>>>>>>>>>>>>>>>>>>>>>>>.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# if we write any code in this then we dont Have  To Close The Files 
+
+# like :
+
+# with open("Heyyyy.txt") as f: 
+#     print(f.read())
+
+# ------------------------------------------->>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---------------------------------
+
+# OOPS Concepts
+
+class Employee:  # Class Name = Employee
+  # name = "Deepak"
+  Course = "PowerBI"
+  Salary = 1200000
+
+  # Deepak =  Employee() # Deepak Is An Object.
+  # print(Deepak.name , Deepak.Course,Deepak.Salary)
+  def getInfo(Self): #method here we can pass any arguments name but we mostly  preefer Self word becz it's  looks good.
+    print(f"The Salaray is {Self.Salary}.The Couse Is {Self.Course}")
+  @staticmethod #--- Like This 
+  def greet(): # if we write like this it will give  an error but if we don't want any error than we have to mention it that it will not take 
+    # any self arguments by writing @staticmethod aboove it.
+    print("goodmorning") 
+
+Deepak =  Employee() # Deepak Is An Object.
+Deepak.Course= "Python"
+Deepak.getInfo() #meaning of This Statement is This ---->> Employee.getInfo(deepak) by default ismai ek arguments pass hota hai..
+Deepak.greet()
+
+
+
+
+
 

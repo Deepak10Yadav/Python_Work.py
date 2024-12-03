@@ -40,9 +40,9 @@
 
 # Correct Code :- 
 
-#Method 1: -
+# Method 1: -
 
-#SNAKE , WATER , GUN (GAME)
+# SNAKE , WATER , GUN (GAME)
 
 # '''
 # snake = 1
@@ -81,39 +81,58 @@
 
 #SNAKE , WATER , GUN (GAME)
 
-'''
-snake = 1
-water = 2 
-gun = 0
-'''
-computer = input("Enter Computer Choice : ") #to  compare any values like here the datatype should be same 
-youstr = input("Enter Your Choice : ")
-youDict = {"s":1 ,"w":2 , "g":0}
-you=youDict[youstr]
+# '''
+# snake = 1
+# water = 2 
+# gun = 0
+# '''
+# computer = input("Enter Computer Choice : ") #to  compare any values like here the datatype should be same 
+# youstr = input("Enter Your Choice : ")
+# youDict = {"s":1 ,"w":2 , "g":0}
+# you=youDict[youstr]
 
-if(computer == you):
-    print("Draw")
+# if(computer == you):
+#     print("Draw")
 
-else:
-    print("Else")
-    print(str(you))
-    if(computer == "s" and you == "w"):
-     print("You Win!!")
+# else:
+#     print("Else")
+#     print(str(you))
+#     if(computer == "s" and you == "w"):
+#      print("You Win!!")
 
-    elif(computer == "g" and you == "s"):    #Ye Bhi Wrong Hai Chacha Ko Puchna hai.
-     print("You Lose!!")
+#     elif(computer == "g" and you == "s"):    #Ye Bhi Wrong Hai Chacha Ko Puchna hai.
+#      print("You Lose!!")
 
-    elif(computer  == "g" and you == "w"):
-     print("You Win!!")
+#     elif(computer  == "g" and you == "w"):
+#      print("You Win!!")
 
-    elif(computer == "w" and you == "g"):
-     print("You Win!!!")
+#     elif(computer == "w" and you == "g"):
+#      print("You Win!!!")
 
-    elif(computer == "w" and you == "s"):
-      print("You Lose")
-    else:
-     print("Default")
+#     elif(computer == "w" and you == "s"):
+#       print("You Lose")
+#     else:
+#      print("Default")
 
-if(computer == "s" and you == "w"):
-  print("You Win!!")
+# if(computer == "s" and you == "w"):
+#   print("You Win!!")
+
+# ---------------------------------->>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<--------------------------
+#project 2
+
+import random
+n = random.randint(1,100)
+a = 0
+Guesses = 0
+while(a!= n):
+  Guesses += 1
+  a = int(input("Guess The Number: "))
+  if(a>n):
+        print("Enter The Lower Number!! ")
+  else:
+        print("Enter The Higher Number!! ")
+
+print(f"You Have Guessed The Number {n} In {Guesses} Guesses")
+
+
 

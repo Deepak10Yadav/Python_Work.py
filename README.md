@@ -1,2 +1,0 @@
-# first.py
- PYTHON Learning.
