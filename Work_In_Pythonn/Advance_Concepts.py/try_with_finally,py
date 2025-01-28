@@ -1,0 +1,14 @@
+def main():
+    try:
+     a = int(input("Enter :"))
+     print(a)
+     return
+    except Exception as e:
+     print(e)
+     return
+    finally:
+     print("We Are In Finally ") #Finally Part Of Code Will Be Always Runnedd No Metter What!!!
+
+main()
+
+# Finally Keyword Very Usefull When It Is Get Used In Function.
