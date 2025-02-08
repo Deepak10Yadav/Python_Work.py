@@ -5,7 +5,7 @@ to use decorators we need to create them and use the '@' symbaol  to use the fun
 '''
 # A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure
 
-# # Syntax := def decorator_name(func):
+# Syntax := def decorator_name(func):
 #     def wrapper(*args, **kwargs):  
 #         # Add functionality before the original function call
 #         result = func(*args, **kwargs)
@@ -19,21 +19,21 @@ to use decorators we need to create them and use the '@' symbaol  to use the fun
 #     # Original function code
 #     pass
 
-# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # ex-1 :=
-def tt(fx):    # here we had created the ddecorated function 
+def tt(fx):    # here we had created the decorated function 
     def mfx():
-        print("Welcome")
-        fx()
-        print("Thank You!!")
+       print("Welcome")
+       fx()
+       print("Thank You!!")
     return mfx
 
 @tt   #here we had used it (or) had called the decorator function.
 def hello():
     print("Hello World")
-
 hello()
+
 
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -80,8 +80,18 @@ def greet(fx):
 @greet
 def add(a, b):
   print(a+b)
-  
+
 # greet(hello)()
 hello()
 # greet(add)(1, 2)
 add(1, 2)
+
+def vip(fx):
+  def deep():
+    print("heyy")
+  return deep
+  
+@vip
+def grt():
+   print("Over!!!!")
+grt()
