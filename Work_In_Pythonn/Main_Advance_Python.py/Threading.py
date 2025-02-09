@@ -17,7 +17,7 @@ def func(seconds):
 # same code using threads
 # here we had used multi threading for printing the output.
 
-t1 = threading.Thread(target=func, args=[1])
+t1 = threading.Thread(target=func, args=[1]) 
 t2 = threading.Thread(target=func, args=[4])
 t3 = threading.Thread(target=func, args=[6])
 
