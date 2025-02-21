@@ -20,16 +20,16 @@ print(list(sqList))
 
 '''allows you to filter a sequence (e.g., a list, tuple, or set) based on a given condition.''' 
 
-# l = [4,5,6,7,8,2]
+l1 = [4,5,6,7,8,2]
 def even(n):
     if (n%2 == 0):
         return True
     return False
 
-OnlyEven = filter(even,l)
+OnlyEven = filter(even,l1)
 print(list(OnlyEven))
 
-#Output : - [2, 4]
+#Output : - [2, 4, 6, 8]
 
 '''--------------------------------------------------------------------------------------------------------------------------------------------------------------------------'''
 

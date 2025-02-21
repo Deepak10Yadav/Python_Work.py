@@ -25,13 +25,13 @@ class Top:
         return self
     def __next__(self): # here we had created an next method
         if self.num <= 10: # here we had writen the condition till where we want to print the numbers.
-          val = self.num 
+          a = self.num 
           self.num += 1
-          return val  
+          return a 
         else:  # to stop the loop we need to raise a exception.
             raise StopIteration
-values = Top()
-print(values.__next__()) # here we had called the iterator and once's any  number is printed then the same element will not be printed again. output = 1
+b = Top()
+print(b.__next__()) # here we had called the iterator and once's any  number is printed then the same element will not be printed again. output = 1
 
-for z in values:  # here the output = 1 will not get printed becz we had already printed it in line 34.
-    print(z)
+for i in b:  # here the output = 1 will not get printed becz we had already printed it in line 34.
+    print(i)

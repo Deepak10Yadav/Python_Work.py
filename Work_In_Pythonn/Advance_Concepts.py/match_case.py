@@ -1,3 +1,5 @@
+a = int(input("Enter The Number From 200 , 404 , 500 := "))
+b = int(input("Enter The Number From 200 , 404 , 500 := "))
 def status(sta):
     match sta:
         case 200:
@@ -9,4 +11,14 @@ def status(sta):
         case _:
             return "Unkonw Status"
 
-print(status(404))
+
+
+def tut(r):
+    match r:
+        case 900:
+            return "found"
+        case Exception as ValueError:
+            return "ValueError"
+        
+print(status(a))
+print(tut(b))

@@ -1,5 +1,5 @@
 ''' magic methods are also known as Dunder Methods this method
-startss from doubke underscore and end at doubke underscore
+starts from double underscore and end at doubke underscore
 example := __init__'''
 
 # we use this in a class
@@ -25,4 +25,4 @@ print(str(e))
 print(repr(e))
 e() # if we want to print the call method part then we use e().
 # print(e.name)
-# print(len(e))  # and here we had called that magic method if we call this directly without creating an magic method it will give an error 
+print(len(e))  # and here we had called that magic method if we call this directly without creating an magic method it will give an error 
