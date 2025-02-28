@@ -99,9 +99,100 @@
 # print(m)
 
 # Q.4 
-try:
-    a = int(input("Enter The Number"))
-    b = int(input("Enter The Number"))
-    print(a/b)
-except ZeroDivisionError as z:
-    print("Infinte Number") 
+# try:
+#     a = int(input("Enter The Number"))
+#     b = int(input("Enter The Number"))
+#     print(a/b)
+# except ZeroDivisionError as z:
+#     print("Infinte Number") 
+
+
+# Linked_List
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+
+class Linkedlist:
+    def  __init__(self):
+        self.head=None
+    def traversal(self):
+        if self.head is None:
+            print("Empty")
+        else:
+            a = self.head
+            while a is not None:
+                print(a.data,end="->")
+                a = a.next
+    def insert_at_begg(self,data):
+        print()
+        b= Node(data)
+        b.next=self.head
+        self.head = b
+
+    def insert_at_end(self,data):
+        print()
+        c= Node(data)
+        f = self.head
+        while f.next is not None:
+            f=f.next
+        f.next = c
+
+    def insert_in_between(self, data, position):
+        print()
+        M1= Node(data) 
+        Fix = self.head
+        for i in range (1,position-1):
+            Fix =Fix.next
+        M1.next=Fix.next
+        Fix.next = M1
+    def delete_at_beg(self):
+        print()
+        rr = self.head
+        self.head = rr.next
+        rr.next = None
+
+    def delete_at_end(self):
+        print()
+        prev = self.head
+        r1 = self.head.next
+        while r1.next is not None:
+            r1 = r1.next
+            prev  = prev.next
+        prev.next = None
+    def delete_in_bet(self,position):
+        print()
+        prev = self.head
+        a = self.head.next
+        for i in range (1,position - 1):
+            a=a.next
+            prev = prev.next
+        prev.next=a.next
+        a.next= None
+
+
+z1 = Linkedlist()
+n1 = Node(1)
+z1.head = n1
+n2 = Node(2)
+n1.next = n2
+n3 = Node(3)
+n2.next = n3
+n4 = Node(4)
+n3.next= n4
+n5 = Node(5)
+n4.next = n5
+n6 = Node(6)
+n5.next=n6
+z1.insert_at_begg(9)
+z1.traversal()
+z1.insert_at_end(8)
+z1.traversal()
+z1.insert_in_between(67,4)
+z1.traversal()
+z1.delete_at_beg()
+z1.traversal()
+z1.delete_at_end()
+z1.traversal()
+z1.delete_in_bet(2)
+z1.traversal()
