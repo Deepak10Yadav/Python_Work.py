@@ -116,7 +116,8 @@ where_result = np.where(numbers >= 5)
 print("Np where",numbers[where_result])
 
 # creating an array at some condditions---------------------------------------------------------------------------------------------------------------
-condition_Array = np.where(numbers > 22,numbers*2,numbers) 
+condition_Array = np.where(numbers > 22,numbers*2,numbers)  # it mostly carry true or false values.
+# condition_Array = np.where(numbers > 4,"true","false")  # it mostly carry true or false values.
 '''
 if(numbers > 5):
      numbers *4
@@ -126,3 +127,41 @@ else:
 ''' # this is the explanations of the Above code in line 119 
 print(condition_Array)
 
+'''-------------------------Adding And Removing  of Data---------------------------------------------------------------------------------------------'''
+arr3 = np.array([1,2,3])
+arr4 = np.array([4,5,6])
+
+# add = arr3 + arr4  # if we use this way to add the elements then we will get a different addition ouput it will direcctly add the elements.
+# print(add)
+add = np.concatenate((arr3 , arr4)) # it will give the output [1,2,3,4,5,6]
+print(add)
+
+'''Array Compatibility'''
+
+
+a = np.array([1,2,3])
+b = np.array([4,5,6])
+c = np.array([7,8,9])
+
+print("Compatibility",a.shape == b.shape) # it will return a boolean value.
+
+
+original = np.array([[1,2],[3,4]])
+new_row = np.array([[5,6],[7,8]])
+
+# to add rows we use vstack --> v = vertical stack.
+with_new_row = np.vstack((original,new_row))
+print(original)
+print(with_new_row)
+
+new_col = np.array([[9],[10]])
+with_new_col = np.hstack((original,new_col))
+print(with_new_col)
+
+'''delete oprations'''
+
+arr = np.array([1,2,3,4])
+deleted = np.delete(arr,2) #here two is index value from which we want to delete the element.
+print(deleted)
+
+'''Chai Aur Code Phase 3-->> 1:27:23'''
