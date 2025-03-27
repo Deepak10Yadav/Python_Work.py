@@ -114,3 +114,15 @@ print(numbers[indices]) # here we had integrated the indicies in numbers array f
 #indexing By Using Array.
 where_result = np.where(numbers >= 5)
 print("Np where",numbers[where_result])
+
+# creating an array at some condditions---------------------------------------------------------------------------------------------------------------
+condition_Array = np.where(numbers > 22,numbers*2,numbers) 
+'''
+if(numbers > 5):
+     numbers *4
+else:
+     numbers
+
+''' # this is the explanations of the Above code in line 119 
+print(condition_Array)
+
