@@ -60,7 +60,7 @@ class doubly_Linked_List():
         a.prev=nn
         nn.next = a
         self.head  = nn
-    
+
     def insert_at_end(self,data):
         print()
         any = Node(data)
