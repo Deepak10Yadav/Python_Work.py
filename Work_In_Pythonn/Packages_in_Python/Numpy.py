@@ -164,4 +164,15 @@ arr = np.array([1,2,3,4])
 deleted = np.delete(arr,2) #here two is index value from which we want to delete the element.
 print(deleted)
 
-'''Chai Aur Code Phase 3-->> 1:27:23'''
+'''vector Operations'''
+
+vector1  = np.array([1,2,3,4,5])
+vector2  = np.array([6,7,8,9,10])
+
+print(vector1+vector2)
+print(vector1*vector2)
+# dot product 
+print("dot product",np.dot(vector1,vector2))
+
+angle_of_dot = np.arccos(np.dot(vector1,vector2)/(np.linalg.norm(vector1) * np.linalg.norm(vector2))) #formula of getting angle
+print(angle_of_dot)
