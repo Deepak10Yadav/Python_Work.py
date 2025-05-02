@@ -21,13 +21,13 @@ print(time.time() - start)
 zeros = np.zeros((3,4))
 print(zeros)
 
-full =  np.full((3,3),6) # if we need a single constant matrix we use full method to create an array.
+full =  np.full((3,3),6) # if we need a single constant matrix we use full method to create an array. create a matrix of 3 by 3 with all value of 6.
 print(full)
 
 random = np.random.random((2,3)) # create a matrix with random constants
 print(random)
 
-sequence = np.arange(0,10,2) #here we give a range to print.
+sequence = np.arange(0,10,2) #here we give a range to print. it will print like o to 10 by the gap of 2 numbers. expexxted output :- [0 2 4 6 8]
 print(sequence)
 
 
@@ -50,7 +50,7 @@ print(Tensor)
 arr = np.array([[1,2,3],[4,5,6]]) # Numpy Arrays Has Multiple Properties.
 print("Shape",arr.shape) # shapes is a properties.
 print("Dimensions",arr.ndim)
-print("Sizze",arr.size)
+print("Size",arr.size)
 print("Data-Types",arr.dtype)
 
 #Array Reshaping.
