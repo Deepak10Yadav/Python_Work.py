@@ -220,13 +220,13 @@
 # print(sum(range(5),-1))
 
 
-'''python
-Z**Z
-2 << Z >> 2
-Z <- Z
-1j*Z
-Z/1/1
-Z<Z>Z
-'''
-import numpy  as np
-Z = np.array([]) 
+# '''python
+# Z**Z
+# 2 << Z >> 2
+# Z <- Z
+# 1j*Z
+# Z/1/1
+# Z<Z>Z
+# '''
+# import numpy  as np
+# Z = np.array([]) 
