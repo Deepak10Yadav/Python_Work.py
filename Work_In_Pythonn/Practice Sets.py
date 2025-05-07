@@ -354,12 +354,41 @@ import numpy as np
 # print(vec1)
 
 #### 51.Create a structured array representing a position (x,y) and a color (r,g,b) (★★☆)
-import matplotlib.pyplot as plt
-x = np.array([1,2,3])
-y = np.array([4,5,7])
-color = ['red','green','blue']
-plt.scatter(x,y,c=color)
-plt.show()
-print(x)
-print(y)
+# import matplotlib.pyplot as plt
+# x = np.array([1,2,3])
+# y = np.array([4,5,7])
+# color = ['red','green','blue']
+# plt.scatter(x,y,c=color)
+# plt.show()
+# print(x)
+# print(y)
 
+
+
+
+# 52. Consider a random vector with shape (100,2) representing coordinates, find point by point distances (★★☆)
+# vector  = np.random.random((100,2))
+# diff = np.diff(vector)
+# print(diff)
+
+# 53. How to convert a float (32 bits) array into an integer (32 bits) array in place?
+# array1 = np.array([1.6,2.5,3.1,4.9])
+# m1 = (list(map(int,array1)))  # method - 1
+## m2 = [int(x) for x in array1] #method - 2 
+# print(m1)
+# print(m2)
+
+
+
+# 54. How to read the following file? (★★☆)
+# 1, 2, 3, 4, 5
+# 6,  ,  , 7, 8
+#  ,  , 9,10,11
+from io import StringIO # its create a string to file. # Convert string to file-like objects.
+csv_data = StringIO("""
+1,2,3,4,5
+6,, ,7,8
+,,9,10,11
+""")
+data = np.genfromtxt(csv_data,delimiter=',', dtype=float)
+print(data)
