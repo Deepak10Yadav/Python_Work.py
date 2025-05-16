@@ -384,11 +384,11 @@ import numpy as np
 # 1, 2, 3, 4, 5
 # 6,  ,  , 7, 8
 #  ,  , 9,10,11
-from io import StringIO # its create a string to file. # Convert string to file-like objects.
-csv_data = StringIO("""
-1,2,3,4,5
-6,, ,7,8
-,,9,10,11
-""")
-data = np.genfromtxt(csv_data,delimiter=',', dtype=float)
-print(data)
+# from io import StringIO # its create a string to file. # Convert string to file-like objects.
+# csv_data = StringIO("""
+# 1,2,3,4,5
+# 6,, ,7,8
+# ,,9,10,11
+# """)
+# data = np.genfromtxt(csv_data,delimiter=',', dtype=float)
+# print(data)
