@@ -392,3 +392,19 @@ import numpy as np
 # """)
 # data = np.genfromtxt(csv_data,delimiter=',', dtype=float)
 # print(data)
+
+# vecctor  = np.array([range(10,50)])
+# print(vecctor)
+
+# vector = np.array([1,2,3,4,5,6,7,8,9])
+# # rev = reversed(vector) # m1
+# rev = vector[::-1] # second method by which we can reverse a array.
+# print(rev)
+
+# mat = np.array([3,3],range(0,8))
+# print(mat)
+
+# arr3D = np.array([[[1,2,3], [4,5,6],
+#                    [7,8,9], [10,11,12]]])
+# # print(arr3D)
+# print(arr3D[1:,0:,1:])
